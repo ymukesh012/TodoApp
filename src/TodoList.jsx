@@ -75,7 +75,7 @@ export default function TodoList(){
 
 {todos.map((todo) => (
 <li key={todo.id}>
-    <span style={todo.isDone?{textDecorationLine:"line-through"}:{}}>{todo.task}</span>
+    <span style={todo.isDone?{textDecorationLine:"line-through",textDecorationColor:"red"}:{}}>{todo.task}</span>
     <button onClick={()=>deleteTodo(todo.id)}>Delete</button>
     <button onClick={()=>MarkAsDone(todo.id)}>MarkAsDone</button>
  
